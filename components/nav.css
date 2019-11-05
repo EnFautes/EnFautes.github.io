@@ -1,0 +1,142 @@
+.navigation-checkbox {
+	display: none;
+}
+
+.navigation-button {
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	top: 70px;
+	right: 70px;
+	border-radius: 50%;
+	z-index: 2000;
+}
+
+.navigation-button:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 56.25em) {
+	.navigation-button {
+		top: 50px;
+		right: 50px;
+	}
+}
+
+@media (max-width: 37.5em) {
+	.navigation-button {
+		top: 40px;
+		right: 40px;
+	}
+}
+
+.navigation-button-img {
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	transform: rotate(0);
+
+	transition: all .3s;
+}
+
+.navigation-checkbox:checked ~ .navigation-button > .navigation-button-img {
+	transform: rotate(90deg);
+}
+
+.navigation-checkbox:checked ~ .navigation-background {
+	height: 385px;
+}
+
+.navigation-checkbox:checked ~ .navigation-nav {
+	opacity: 1;
+	visibility: visible;
+}
+
+.navigation-background {
+	background: #000;
+    background: -webkit-linear-gradient(to bottom, #414141, #000);
+    background: linear-gradient(to bottom, #414141, #000);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+	height: 60px;
+	width: 60px;
+	border-radius: 50px;
+	position: fixed;
+	top: 70px;
+	right: 70px;
+
+	transition: all .3s;
+	z-index: 1000;
+}
+
+@media (max-width: 56.25em) {
+	.navigation-background {
+		top: 50px;
+		right: 50px;
+	}
+}
+
+@media (max-width: 37.5em) {
+	.navigation-background {
+		top: 40px;
+		right: 40px;
+	}
+}
+
+.navigation-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1500;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: all .2s;
+}
+
+.navigation-list {
+	position: fixed;
+	top: 115px;
+	right: 70px;
+	list-style: none;
+	text-align: center;
+}
+
+@media (max-width: 56.25em) {
+	.navigation-list {
+		top: 95px;
+		right: 50px;
+	}
+}
+
+@media (max-width: 37.5em) {
+	.navigation-list {
+		top: 85px;
+		right: 40px;
+	}
+}
+
+.navigation-link:link,
+.navigation-link:visited {
+	text-decoration: none;
+	display: inline-block;
+	padding: 12px 21px;
+	font-family: 'Noto Sans', sans-serif;
+	color: #fff;
+	transition: all .4s;
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+	opacity: .5;
+}
+
+.none {
+	cursor: not-allowed;
+}
+
+.link-img {
+	width: 20px;
+	height: 20px;
+}

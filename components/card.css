@@ -1,0 +1,43 @@
+.card {
+	min-height: 100%;
+	border-radius: 0;
+	border: none;
+	background-color: #000;
+	color: #fff;
+}
+
+.card:hover > .card-title {
+	color: #FFF999;
+	
+}
+
+.card-img {
+	z-index: 0 !important;
+	border-radius: 0;
+}
+
+.card-date {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.3em;
+	margin: 1em 1em;
+}
+
+.card-title {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 2em;
+	line-height: 1.1;
+	margin: .5em .5em;
+	margin-bottom: 1.5em;
+}
+
+.card-title::before {
+    background-color: #FFF54C;
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: .4em;
+    position: relative;
+    top: .15em;
+    left: 1em;
+    transform: translateX(-2.4rem) rotate(-4deg);
+}

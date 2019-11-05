@@ -1,0 +1,38 @@
+.article-date {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.1em;
+	font-weight: 700;
+	color: var(--font-color);
+}
+
+.article-title {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 3em;
+	font-weight: 700;
+	color: var(--title-color);
+	margin: 1em 0;
+}
+
+@media (max-width: 56.25em) {
+	.article-title {
+		font-size: 2.7em;
+	}
+}
+
+@media (max-width: 37.5em) {
+	.article-title {
+		font-size: 2.4em;
+	}
+}
+
+.article-text {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.1em;
+	color: var(--font-color);
+}
+
+@media (min-width: 56.25em) {
+	.article-text, .article-date {
+		margin: 0 13em;
+	}
+}

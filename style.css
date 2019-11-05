@@ -1,0 +1,34 @@
+/* HOME */
+@import url("components/main-logo.css");
+@import url("components/nav.css");
+@import url("components/title.css");
+@import url("components/card.css");
+@import url("components/timeline.css");
+@import url("components/footer.css");
+@import url("components/switch.css");
+
+/* ARTICLE */
+@import url("components/banner.css");
+@import url("components/article-text.css");
+@import url("components/twitter.css");
+@import url("components/top.css");
+
+body {
+	background-color: var(--bg-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+    --font-color: #000;
+    --title-color: #000;
+    --bg-color: #FFF999;
+}
+
+[data-theme="dark"] {
+    --font-color: #fff;
+    --title-color: #FFF999;
+    --bg-color: #29292e;
+}

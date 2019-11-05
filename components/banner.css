@@ -1,0 +1,29 @@
+.banner {
+	height: 85vh;
+	background-image: 
+		linear-gradient(
+			to right bottom, 
+			rgba(0, 0, 0, .9), 
+			rgba(0, 0, 0, .1)), 
+		url(../img/photo.jpg);
+	background-size: cover;
+	background-position: top;
+	
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+	margin-bottom: 2em;
+}
+
+@media (max-width: 56.25em) {
+	.banner {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+	}
+}
+
+@media (max-width: 37.5em) {
+	.banner {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	}
+}
