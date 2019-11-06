@@ -24,11 +24,13 @@ html {
 :root {
     --font-color: #000;
     --title-color: #000;
+    --article-title-color: #fff;
     --bg-color: #FFF999;
 }
 
 [data-theme="dark"] {
     --font-color: #fff;
     --title-color: #FFF999;
+    --article-title-color: #FFF999;
     --bg-color: #29292e;
 }

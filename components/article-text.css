@@ -2,15 +2,16 @@
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 1.1em;
 	font-weight: 700;
-	color: var(--font-color);
+	color: var(--title-color);
 }
 
 .article-title {
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 3em;
 	font-weight: 700;
-	color: var(--title-color);
-	margin: 1em 0;
+	color: var(--article-title-color);
+	margin: 4.5em 0 0 0;
+	transform: rotate(-5deg);
 }
 
 @media (max-width: 56.25em) {
